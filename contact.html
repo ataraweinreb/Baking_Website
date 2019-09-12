@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+<div id="navbar">
+  	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="cake.html">Cakes</a></li>
+			<li><a href="cookies.html">Cookies</a></li>
+		</ul>
+	</nav>
+	</div>
+	
+	<div class="contact_me">
+		<form method="post">
+			<h1>Contact Me</h1>
+			<img class="contact-image" src="me_contact.jpeg" width="50%" height="" alt=""/>
+		  <button type="button" id="clickbutton" onclick="alert('Fill out the form details to contact me!')">Instructions</button>
+			<br><br><br>
+			<fieldset>
+				<legend>Personal Information</legend>
+					<br>
+					<label for="name">Enter your name:<br></label>
+					<input placeholder="Name" name="name" type="text" id="name" tabindex="1" required autofocus><br><br>
+				
+					<label for="email">Enter your email:<br></label>
+					<input placeholder="Email" name="email" type="email" id="email" tabindex="1" required autofocus><br><br>
+				
+					<label for="luckynumber">Select a lucky number from 1 - 5:<br></label>
+					<input placeholder="Lucky Number" name="luckynumber" type="number" id="luckynumber" tabindex="1" required autofocus min="1" max="5"><br><br>
+					
+					<label for="age">How old are you?<br></label>
+					<input placeholder="Age" name="age" type="range" id="age" tabindex="1" min="1" max="100"><br><br>
+				
+					<label for="frosting">Choose your favorite colored frosting:<br></label>
+					<input placeholder="Frosting" name="frosting" type="color" id="frosting" tabindex="1" required autofocus><br><br>
+				
+					<label for="dessert-select">Choose your favorite dessert:<br></label>
+					<select name="dessert-select" id="dessert-select">
+						<optgroup label="Baked Goods">
+							<option>Brownies</option>
+							<option>Muffins</option>
+							<option>Birthday Cake</option>
+						</optgroup>
+						<optgroup label="Frozen Desserts">
+							<option>Ice Pops</option>
+							<option>Chocolate Ice Cream</option>
+							<option>Mousse</option>
+						</optgroup>
+					</select><br><br>
+				
+					<label for="sprinkles">Do you like sprinkles?</label>
+    				<input type="checkbox" name="sprinkles" id="sprinkles"><br><br><br>
+			</fieldset>
+			<br><br>
+			<fieldset>
+				<legend>Select</legend>
+					<label for="Questions">What is your reason for contacting me?</label><br>
+				  	<input type="radio" name="selection" id="question" value="question" checked> Question<br>
+  					<input type="radio" name="selection" id="comment" value="comment"> Comment<br>
+  					<input type="radio" name="selection" id="other" value="other"> Other<br>
+			</fieldset>
+			<br><br>
+			<fieldset>
+				<legend>Your Message</legend>
+				
+					<label for="Textbox"><br>Please enter a short message for me here.<br>I'll do my best to get back to you ASAP!</label><br>
+					<textarea name="message" id="message" rows="10" cols="30"></textarea><br><br>
+
+					<label for="email-checkbox">Check the box to sign up for my email list!</label><br>
+						<input placeholder="Sign up" type="checkbox" name="email-checkbox" id="email-checkbox" tabindex="1" required autofocus><br><br>
+				
+					<label for="todays-date">Enter today's date:</label><br>
+					<input placeholder="Date" type="date" id="date" name="date" tabindex="1" required autofocus><br><br><br><br>
+				
+				 <label for="submit">Click to submit your answers:</label><br>
+				 <input type="submit" name="submit" id="submit" value="Submit"><br><br><br>
+			</fieldset>
+		</form>
+	</div>
+</header>
+<footer>&copy; Copyright 2019 Tara Weinreb</footer>
+</body>
+</html>
